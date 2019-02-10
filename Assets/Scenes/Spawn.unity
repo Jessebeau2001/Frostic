@@ -2323,8 +2323,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  FloatStrength: 0.01
-  hoverSpeed: 0.1
+  FloatStrength: 0.005
+  hoverSpeed: 6
+  icySpirit: {fileID: 21300000, guid: 395087dc6002d9546837c69cba5b71aa, type: 3}
+  hatsu: {fileID: 21300000, guid: 8ee454e5c27809a48bb692b0560c88b0, type: 3}
 --- !u!95 &1451345617
 Animator:
   serializedVersion: 3
