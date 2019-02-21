@@ -35,7 +35,3 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-#personal stuff
-*.psd
-*.psd.meta
-Assets/Art/Sketches
