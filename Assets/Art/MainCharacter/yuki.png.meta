@@ -1,13 +1,11 @@
 fileFormatVersion: 2
-guid: 395087dc6002d9546837c69cba5b71aa
-labels:
-- Character
+guid: 32fdd0c7fb8fe504f86794354ee2d872
 TextureImporter:
   fileIDToRecycleName:
-    21300000: playerBlue_Front
-    21300002: playerBlue_Back
-    21300004: playerBlue_SideLeft
-    21300006: playerBlue_SideRight
+    21300000: yuki_0
+    21300002: yuki_1
+    21300004: yuki_2
+    21300006: yuki_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -45,7 +43,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 2
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -78,24 +76,15 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 32
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playerBlue_Front
+      name: yuki_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 18
         width: 16
         height: 16
       alignment: 0
@@ -105,11 +94,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: playerBlue_Back
+      name: yuki_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 17
+        y: 18
         width: 16
         height: 16
       alignment: 0
@@ -119,11 +108,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: playerBlue_SideLeft
+      name: yuki_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 16
         height: 16
       alignment: 0
@@ -133,11 +122,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: playerBlue_SideRight
+      name: yuki_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 17
+        y: 1
         width: 16
         height: 16
       alignment: 0
