@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class CharacterSelection : MonoBehaviour {
 
     private void Start()
     {
+        index = PlayerPrefs.GetInt("CharacterSelected");
+
         characterList = new GameObject[transform.childCount];
 
         for (int i = 0; i < transform.childCount; i++)
@@ -17,8 +20,8 @@ public class CharacterSelection : MonoBehaviour {
         foreach(GameObject go in characterList)
             go.SetActive(false);
 
-        if (characterList[0])
-            characterList[0].SetActive(true);
+        if (characterList[index])
+            characterList[index].SetActive(true);
     }
 
     public void ToggleLeft()
@@ -44,7 +47,8 @@ public class CharacterSelection : MonoBehaviour {
     }
 
     public void ConfirmButton()
-    {
-        
+    {   
+        PlayerPrefs.SetInt("CharacterSelected", index);
+        SceneManager.LoadScene("Spawn");
     }
 }
