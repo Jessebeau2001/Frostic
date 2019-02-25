@@ -8,6 +8,7 @@ public class TextTest : MonoBehaviour {
 
 	public Text myText;
 	public float timeLeft;
+	public float TimeScale;
 	private bool stop = false;
 	void Start ()
 	{
@@ -16,7 +17,7 @@ public class TextTest : MonoBehaviour {
 	
 	void Update () {
 		if (timeLeft >= 0 ) {
-			timeLeft -= Time.deltaTime*10;
+			timeLeft -= Time.deltaTime*TimeScale;
 		}
 		if (timeLeft >= 100) {
 			myText.text = timeLeft.ToString("F0");

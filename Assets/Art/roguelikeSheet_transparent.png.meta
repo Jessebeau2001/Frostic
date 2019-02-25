@@ -2,8 +2,6 @@ fileFormatVersion: 2
 guid: 0541c0b6a93182d42adc4512df201e59
 labels:
 - Terrain
-timeCreated: 1549656798
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: roguelikeSheet_transparent_0
