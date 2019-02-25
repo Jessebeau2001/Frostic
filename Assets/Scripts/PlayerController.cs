@@ -6,11 +6,6 @@ public class PlayerController : MonoBehaviour
 {
 
     public float moveSpeed;
-    public float FloatStrength;
-    public float hoverSpeed;
-
-    private Animator anim;
-    private Vector3 floatY;
     void Start()
     {
     }
@@ -21,7 +16,5 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
 
         transform.Translate(new Vector3(moveHorizontal, moveVertical));
-        //floatY.y = (Mathf.Sin(hoverSpeed * Time.time) * FloatStrength);
-        //transform.Translate(new Vector3(moveHorizontal, moveVertical + floatY.y));
     }
 }
