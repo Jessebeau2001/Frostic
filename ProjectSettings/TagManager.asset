@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PointSystem
+  - Coin
+  - Gem
+  - Treasure_Chest
+  - Money_Bag
+  - Gold_Cluster
   layers:
   - Default
   - TransparentFX
