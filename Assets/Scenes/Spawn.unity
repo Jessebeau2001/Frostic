@@ -44155,7 +44155,7 @@ GameObject:
   - component: {fileID: 895303925}
   - component: {fileID: 895303924}
   - component: {fileID: 895303923}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44198,7 +44198,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &895303925
 RectTransform:
@@ -44233,7 +44233,7 @@ GameObject:
   - component: {fileID: 925806052}
   - component: {fileID: 925806051}
   - component: {fileID: 925806050}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66486,7 +66486,7 @@ GameObject:
   - component: {fileID: 1148700485}
   - component: {fileID: 1148700487}
   - component: {fileID: 1148700486}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: NullText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66745,7 +66745,7 @@ GameObject:
   - component: {fileID: 1226448472}
   - component: {fileID: 1226448474}
   - component: {fileID: 1226448473}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66768,7 +66768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -118.3, y: -25}
+  m_AnchoredPosition: {x: -118.29999, y: -25}
   m_SizeDelta: {x: 47, y: 47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226448473
@@ -67057,7 +67057,7 @@ GameObject:
   - component: {fileID: 1653275678}
   - component: {fileID: 1653275677}
   - component: {fileID: 1653275679}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TimerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
