@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-"/Assets/TextMesh Pro/*" linguist-detectable=false 
+'/Assets/TextMesh Pro/*' linguist-detectable=false 
 /Assets/TextMesh Pro/Resources/Shaders/* linguist-detectable=false 
