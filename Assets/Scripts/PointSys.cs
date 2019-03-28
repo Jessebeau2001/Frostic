@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PointSys : MonoBehaviour
 {
@@ -11,5 +12,9 @@ public class PointSys : MonoBehaviour
     void Update () {
         pointsText.text = ("" + points);
         endText.text = ("You scored " + points + " points!");
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene("Menu");
+        }
     }
 }

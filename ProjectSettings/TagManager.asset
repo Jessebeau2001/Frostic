@@ -19,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Clouds
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: AboveImage
+    uniqueID: 2309437217
     locked: 0

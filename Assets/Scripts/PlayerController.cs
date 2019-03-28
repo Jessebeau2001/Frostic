@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(new Vector3(moveHorizontal, moveVertical));
 
-        if (Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
             Debug.Log("Quit");
         }
