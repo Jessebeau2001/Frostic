@@ -6,14 +6,19 @@ public class PlayerController : MonoBehaviour
 {
 
     public float moveSpeed;
-
     private PointSys pt; //reference to the PoinSys script
+    public Rigidbody2D rb;
+    void Start() {
+        Rigidbody2D rb = this.gameObject.GetComponent<Rigidbody2D>();
+    }
+    
     void Update()
     {
         float moveHorizontal = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         float moveVertical = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
 
-        transform.Translate(new Vector3(moveHorizontal, moveVertical));
+        //transform.Translate(new Vector3(moveHorizontal, moveVertical));
+        rb.velocity = new Vector2(moveHorizontal, moveVertical);
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
