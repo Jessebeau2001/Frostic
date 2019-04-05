@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public float moveSpeed;
+    private onScreenControl onScreenControl;
     private PointSys pt; //reference to the PoinSys script
     public Rigidbody2D rb;
     void Start() {
@@ -14,10 +15,12 @@ public class PlayerController : MonoBehaviour
     
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        float moveVertical = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+        float moveVertical = onScreenControl.controlDirectionVer * moveSpeed * Time.deltaTime;
+        float moveHorizontal = onScreenControl.controlDirectionHor * moveSpeed * Time.deltaTime;
 
-        //transform.Translate(new Vector3(moveHorizontal, moveVertical));
+        // float moveHorizontal = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        // float moveVertical = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+
         rb.velocity = new Vector2(moveHorizontal, moveVertical);
 
         if (Input.GetKeyDown(KeyCode.Escape)) {

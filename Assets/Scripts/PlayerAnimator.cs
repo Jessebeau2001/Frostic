@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAnimator : MonoBehaviour
 {
     private Animator anim;
+    private onScreenControl onScreenControl;
         void Start()
     {
         anim = GetComponent<Animator>();
@@ -14,5 +15,8 @@ public class PlayerAnimator : MonoBehaviour
     {
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
+
+        anim.SetFloat("MoveX", onScreenControl.controlDirectionHor);
+        anim.SetFloat("MoveY", onScreenControl.controlDirectionVer);
     }
 }
