@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TextTest : MonoBehaviour {
-
+	public levelChanger levelChanger;
 	public Text myText;
 	public float timeLeft;
 	public float TimeScale;
@@ -26,7 +26,7 @@ public class TextTest : MonoBehaviour {
 		} else if (timeLeft >= 0) {
 			myText.text = "00" + timeLeft.ToString("F0");
 		} else {
-			SceneManager.LoadScene("endScreen");
+			levelChanger.FadeToLevel(3);
 		}
 			
 	}
