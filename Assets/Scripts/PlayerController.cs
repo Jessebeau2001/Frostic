@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        // Movement();
-        MobileMovement();
+        Movement();
+        // MobileMovement();
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();

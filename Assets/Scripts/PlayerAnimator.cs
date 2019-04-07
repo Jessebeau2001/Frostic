@@ -13,8 +13,8 @@ public class PlayerAnimator : MonoBehaviour
 
     void Update()
     {
-        // NormalAnimator();
-        MobileAnimator();
+        NormalAnimator();
+        // MobileAnimator();
     }
     void NormalAnimator() {
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
