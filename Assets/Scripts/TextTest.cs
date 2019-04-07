@@ -28,6 +28,9 @@ public class TextTest : MonoBehaviour {
 		} else {
 			levelChanger.FadeToLevel(3);
 		}
-			
+	}
+
+	public void DebugTime() {
+		timeLeft = 5;
 	}
 }

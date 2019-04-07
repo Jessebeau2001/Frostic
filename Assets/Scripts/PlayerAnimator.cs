@@ -13,9 +13,14 @@ public class PlayerAnimator : MonoBehaviour
 
     void Update()
     {
+        // NormalAnimator();
+        MobileAnimator();
+    }
+    void NormalAnimator() {
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
-
+    }
+    void MobileAnimator() {
         anim.SetFloat("MoveX", onScreenControl.controlDirectionHor);
         anim.SetFloat("MoveY", onScreenControl.controlDirectionVer);
     }
