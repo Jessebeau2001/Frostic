@@ -6,24 +6,50 @@ public class PlayerController : MonoBehaviour
 {
 
     public float moveSpeed;
+    private onScreenControl onScreenControl;
     private PointSys pt; //reference to the PoinSys script
+    public GameObject MobileControls;
+    public GameObject DebugButtons;
     public Rigidbody2D rb;
     void Start() {
         Rigidbody2D rb = this.gameObject.GetComponent<Rigidbody2D>();
     }
-    
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        float moveVertical = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-
-        //transform.Translate(new Vector3(moveHorizontal, moveVertical));
-        rb.velocity = new Vector2(moveHorizontal, moveVertical);
+        // Movement();
+        MobileMovement();
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
             Debug.Log("Quit");
         }
+
+        if (Input.GetKeyDown(KeyCode.F1)){
+            if (MobileControls.activeSelf) {
+                MobileControls.SetActive(false);
+            } else {
+                MobileControls.SetActive(true);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.F2)){
+            if (DebugButtons.activeSelf) {
+                DebugButtons.SetActive(false);
+            } else {
+                DebugButtons.SetActive(true);
+            }
+        }
+    }
+    void Movement() {
+        float moveHorizontal = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        float moveVertical = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+
+        rb.velocity = new Vector2(moveHorizontal, moveVertical);
+    }
+    void MobileMovement() {
+        float moveVertical = onScreenControl.controlDirectionVer * moveSpeed * Time.deltaTime;
+        float moveHorizontal = onScreenControl.controlDirectionHor * moveSpeed * Time.deltaTime;
+
+        rb.velocity = new Vector2(moveHorizontal, moveVertical);
     }
     void OnTriggerEnter2D(Collider2D col) {
         switch (col.gameObject.tag){

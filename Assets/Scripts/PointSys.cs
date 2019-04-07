@@ -17,4 +17,7 @@ public class PointSys : MonoBehaviour
             SceneManager.LoadScene("Menu");
         }
     }
+    public void DebugAdd() {
+        points = points + 100;
+    }
 }
