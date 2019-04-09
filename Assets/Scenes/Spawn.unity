@@ -3078,6 +3078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsText: {fileID: 925806050}
   endText: {fileID: 1148700486}
+  reset: 0
 --- !u!1 &298599130
 GameObject:
   m_ObjectHideFlags: 0
@@ -45149,7 +45150,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 300
-    m_Alignment: 3
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -67841,7 +67842,6 @@ MonoBehaviour:
   moveSpeed: 250
   MobileControls: {fileID: 501148116}
   DebugButtons: {fileID: 392977718}
-  rb: {fileID: 1451345617}
 --- !u!50 &1451345617
 Rigidbody2D:
   serializedVersion: 4
@@ -67899,6 +67899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21dd7f9b76f1fde41bbf189ca71874e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PointSystem: {fileID: 0}
 --- !u!4 &1627620907
 Transform:
   m_ObjectHideFlags: 0

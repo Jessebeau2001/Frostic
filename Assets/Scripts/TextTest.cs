@@ -9,7 +9,6 @@ public class TextTest : MonoBehaviour {
 	public Text myText;
 	public float timeLeft;
 	public float TimeScale;
-	private bool stop = false;
 	void Start ()
 	{
 

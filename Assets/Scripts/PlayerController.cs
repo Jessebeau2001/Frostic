@@ -10,9 +10,9 @@ public class PlayerController : MonoBehaviour
     private PointSys pt; //reference to the PoinSys script
     public GameObject MobileControls;
     public GameObject DebugButtons;
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     void Start() {
-        Rigidbody2D rb = this.gameObject.GetComponent<Rigidbody2D>();
+        rb = this.gameObject.GetComponent<Rigidbody2D>();
     }
     void Update()
     {

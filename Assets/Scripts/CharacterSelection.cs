@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour {
-
+    public PointSys PointSystem;
     private GameObject[] characterList;
     private int index;
 
